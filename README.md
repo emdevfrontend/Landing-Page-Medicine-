@@ -1,8 +1,7 @@
 # Landing Page Medicine
 
 ##
-ABOUT:<br><br>
-The Landing Page can be used for the purpose of disclosing links and images about a company or person
+ABOUT: The Landing Page can be used for the purpose of disclosing links and images about a company or person
 <br>
 <br>
 DETAILS:
@@ -15,8 +14,7 @@ DETAILS:
 
 #
 
-SOBRE:<br><br>
-A Landing Page pode ser utilizada com a finalidade de divulgar links e imagens sobre uma empresa ou pessoa
+SOBRE: A Landing Page pode ser utilizada com a finalidade de divulgar links e imagens sobre uma empresa ou pessoa
 <br>
 <br>
 DETALHES:
