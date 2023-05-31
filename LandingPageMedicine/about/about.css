@@ -152,7 +152,7 @@ section{
 }
 
 /* RESPONSIVE */
-@media (max-width: 900px) {
+@media (max-width: 920px) {
     .navbar{
         position: fixed;
     }
