@@ -27,4 +27,3 @@ DETALHES:
 
 #
 
-https://user-images.githubusercontent.com/122825893/242136350-9c1f8fcf-deb6-4671-a5c5-fe030a815060.mp4
