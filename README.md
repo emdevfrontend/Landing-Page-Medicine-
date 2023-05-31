@@ -1,4 +1,4 @@
-# Landing Page Simple
+# Landing Page (Medicine)
 
 ##
 ABOUT: The Landing Page can be used for the purpose of disclosing links and images about a company or person
