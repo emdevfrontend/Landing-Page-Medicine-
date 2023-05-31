@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+:root{
+    --white: #fff;
+    --black: #000;
+    --blue: #00dccd;
+}
+body{
+    background: linear-gradient(90deg, #00a2c7, #005b5d);
+    height: 100vh;
+}
+
+.navbar{
+    display: flex;
+    position: fixed;
+    justify-content: space-around;
+    width: 100%;
+    padding: 10px;
+    align-items: center;
+    background: var(--white);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.logo{
+    font-size: 1.2rem;
+    color: var(--black);
+}
+.menu{
+    display: flex;
+    gap: .5rem;
+    font-size: 1.4rem;
+    align-items: center;
+}
+.page{
+    color: var(--black);
+    padding: 0 10px;
+    background-color: var(--blue);
+    border-radius: 20px;
+    font-weight: 700;
+}
+.social{
+    display: flex;
+    gap: .4rem;
+}
+.media a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.2rem;
+    height: 2.9rem;
+    background-color: var(--blue);
+    width: 2.9rem;
+    border-radius: 50%;
+    color: var(--white);
+}
+.media a:hover{
+    transform: scale(115%);
+    transition: .4s;
+}
+.nav-item{
+    padding: 0 10px;
+    color: var(--black)
+}
+.nav-item:hover{
+    border-radius: 20px;
+    color: var(--black);
+    background-color: var(--blue);
+    transition: .4s;
+    font-weight: 700;
+}
+.responsive-btn{
+    display: none;
+}
+
+section{
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+    padding: 2rem 0 0 0;
+}
+.home{
+    display: flex;
+    margin: 0 7rem;
+    align-items: center;
+}
+.img img{
+    width: 17.9rem;
+}
+
+.text{
+    color: var(--white);
+    z-index: -1;
+}
+.text h2{
+    font-size: 2.7rem;
+    opacity: 57%;
+}
+.text p{
+    font-size: 1.7rem;
+}
+
+.cards{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 2.7rem;
+}
+.card{
+    border: 4px solid var(--white);
+    text-align: center;
+    border-radius: 25px;
+    max-width: 14rem;
+    padding: 1.2rem;
+    z-index: -1;
+    animation: card 2s infinite;
+}
+.card i{
+    font-size: 2rem;
+    background-color: var(--blue);
+    border-radius: 50%;
+    padding: 7px;
+    color: var(--white);
+}
+.card p{
+    text-align: center;
+    color: var(--white);
+    font-size: 1.2rem;
+}
+
+@keyframes card {
+    50%{
+       transform: scale(102.5%); 
+    }
+}
+
+/* RESPONSIVE */
+@media (max-width: 920px) {
+    .navbar{
+        position: fixed;
+    }
+    .responsive-btn{
+        display: block;
+        font-size: 2.9rem;
+        color: var(--black);
+    }
+    .page{
+        font-size: 1.7rem;
+    }
+    .menu{
+        position: fixed;
+        flex-direction: column;
+        margin: 0 auto;
+        top: 75px;
+        right: -100%;
+        text-align: center;
+        width: auto;
+        height: auto;
+        padding: 20px 70px;
+        border-bottom-left-radius: 40px;
+        background-color: var(--white);
+        z-index: 10;
+        transition: all .2s;
+    }
+    .menu.active{
+        right: 0;
+        transition: all .4s ease;
+    }
+    .nav-item{
+        font-size: 1.7rem;
+    }
+
+    section{
+        justify-content: center;
+    }
+    .home{
+        padding: 5.9rem 0 0 0;
+        margin: 0 .4rem;
+        text-align: center;
+        flex-direction: column;
+    }
+    .img img{
+        padding: 0 0 2.7rem 0;
+    }
+    .text h2{
+        font-size: 2.5rem;
+    }
+    .text p{
+        font-size: 1.4rem;
+    }
+    .cards{
+        flex-wrap: wrap;
+        gap: .4rem;
+    }
+    .card{
+        padding: 1rem;
+        max-width: 10rem;
+    }
+}
